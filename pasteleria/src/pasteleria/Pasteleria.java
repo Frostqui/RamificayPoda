@@ -35,6 +35,7 @@ public class Pasteleria {
         return true;
     }
 
+    
     public static void main(String args[]) throws FileNotFoundException, UnsupportedEncodingException {
         int n = 0, m = 0;
         int datos_pasteleros[][] = null;
@@ -172,7 +173,7 @@ public class Pasteleria {
 
         PrintWriter writer = new PrintWriter(ficherosalida, "UTF-8");
         for (int i = 1; i < pastel.length; i++) {           
-            writer.println("Pastel numero " + i + " tipo: " + pastel[i] + " asignado a " + sol[i]);
+            writer.println(i + "- del tipo: " + pastel[i] + " asignado a " + sol[i]);
         }
         writer.println("Beneficio: " + beneficio);
         writer.close();
